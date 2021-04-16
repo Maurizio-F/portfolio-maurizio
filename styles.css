@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* ALLGEMEIN */
+
 body {
   margin: 0;
   background: rgb(32, 35, 41);
@@ -12,20 +14,28 @@ body {
     "Segoe UI Symbol";
 }
 
+h1 {
+  font-size: 5em;
+}
+
 .container {
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 20% auto auto;
 }
+
+/* HEADER */
 
 .header-section {
   background: white;
   height: auto;
 }
 
+/* NAVBAR */
+
 .navbar-section {
   display: grid;
   background: whitesmoke;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
 .initialien {
@@ -54,5 +64,15 @@ body {
   text-decoration: none;
 }
 
+/* BANNER */
+
 .banner {
+  display: grid;
+  background: #f7faff;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.banner img {
+  width: 30em;
+  height: auto;
 }
