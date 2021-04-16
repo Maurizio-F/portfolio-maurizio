@@ -5,7 +5,7 @@
 }
 
 /*FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Courgette&display=swap");
 
 /* ALLGEMEIN */
 
@@ -39,12 +39,18 @@ h2 {
 .navbar-section {
   display: grid;
   background: #adb5bd;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .logo-name {
   text-align: left;
   list-style-type: none;
+  font-family: "Courgette", cursive;
+}
+
+.logo-name li {
+  display: inline-block;
+  padding: 0.8em;
 }
 
 .logo-name a {
@@ -53,19 +59,26 @@ h2 {
   font-size: 1.3em;
 }
 
-.links {
+a:hover {
+  color: #fff;
+}
+
+.links-nav {
   text-align: right;
   list-style-type: none;
 }
 
-.links li {
-  display: inline;
-  padding: 1em;
+.links-nav li {
+  display: inline-block;
+  padding: 0.8em;
+  padding-right: 2em;
 }
 
-.links a {
+.links-nav a {
   color: black;
   text-decoration: none;
+  font-size: 1.3em;
+  margin-top: 3px;
 }
 
 /* BANNER */
@@ -82,15 +95,23 @@ h2 {
   border-bottom-right-radius: 40px;
 }
 
+.banner img:hover {
+  filter: grayscale(80%);
+  opacity: 0.9;
+  transition-delay: 400ms;
+  transition-duration: 400ms;
+}
+
 /* Main */
 
 .main-section-1 {
   display: grid;
   grid-auto-flow: column;
   justify-items: center;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
   background: #fff;
+  margin-bottom: 1.5em;
 }
 
 .main-section-1 section {
@@ -102,10 +123,9 @@ h2 {
   display: grid;
   grid-auto-flow: column;
   justify-items: center;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  grid-column-gap: 20px;
-  background: #fff;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  background: #acb5bd;
 }
 
 .main-section-2 section {
@@ -117,8 +137,8 @@ h2 {
   display: grid;
   grid-auto-flow: column;
   justify-items: center;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
   background: #fff;
 }
 
@@ -127,18 +147,55 @@ h2 {
   overflow: auto;
 }
 
-.card {
-  background: #f7fafe;
+.card-white {
+  background: #fff;
   width: 25em;
   height: auto;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 3em;
   padding: 0.9em;
+  text-align: center;
 }
 
+.card-white:hover {
+  background: #acb5bd;
+}
+
+.card-grey {
+  background: #acb5bd;
+  width: 25em;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding: 0.9em;
+  text-align: center;
+}
+
+.card-grey:hover {
+  background: #fff;
+}
+
+/* FOOTER */
 .footer-section {
   display: grid;
   background: #adb5bd;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.kontakt {
+  list-style-type: none;
+}
+
+/* SONSTIGES */
+
+.grey {
+  background: #acb5bd;
+  padding-top: 0.3em;
+}
+
+.vertical {
+  padding: 8px;
+  border-left: 2px solid grey;
 }
