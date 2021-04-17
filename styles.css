@@ -12,6 +12,8 @@
 body {
   margin: 0;
   font-family: "Archivo", sans-serif;
+  color: #2b2c28;
+  font-size: 1em;
 }
 
 h1 {
@@ -27,6 +29,16 @@ h2 {
   font-size: 2em;
 }
 
+/* GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25em, auto));
+  grid-template-rows: 1fr;
+  justify-items: center;
+  margin: 4em;
+}
+
 /* HEADER */
 
 .header-section {
@@ -38,7 +50,7 @@ h2 {
 
 .navbar-section {
   display: grid;
-  background: #adb5bd;
+  background: #28777b;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -104,73 +116,28 @@ a:hover {
 
 /* Main */
 
-.main-section-1 {
-  display: grid;
-  grid-auto-flow: column;
-  justify-items: center;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
-  background: #fff;
-  margin-bottom: 1.5em;
-}
-
-.main-section-1 section {
-  max-height: 200px;
-  overflow: auto;
-}
-
-.main-section-2 {
-  display: grid;
-  grid-auto-flow: column;
-  justify-items: center;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
-  background: #acb5bd;
-}
-
-.main-section-2 section {
-  max-height: 200px;
-  overflow: auto;
-}
-
-.main-section-3 {
-  display: grid;
-  grid-auto-flow: column;
-  justify-items: center;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
-  background: #fff;
-}
-
-.main-section-3 section {
-  max-height: 300px;
-  overflow: auto;
-}
-
 .card-white {
   background: #fff;
-  width: 25em;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  width: auto;
   height: auto;
   border-radius: 10px;
-  margin-top: 1em;
-  margin-bottom: 3em;
-  padding: 0.9em;
-  text-align: center;
 }
 
 .card-white:hover {
-  background: #acb5bd;
+  background: #28777b;
 }
 
 .card-grey {
-  background: #acb5bd;
-  width: 25em;
+  background: #28777b;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  width: auto;
   height: auto;
   border-radius: 10px;
-  margin-top: 1em;
-  margin-bottom: 3em;
-  padding: 0.9em;
-  text-align: center;
 }
 
 .card-grey:hover {
@@ -180,7 +147,7 @@ a:hover {
 /* FOOTER */
 .footer-section {
   display: grid;
-  background: #adb5bd;
+  background: #28777b;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
@@ -190,12 +157,8 @@ a:hover {
 
 /* SONSTIGES */
 
-.grey {
-  background: #acb5bd;
+.petrol {
+  background: #28777b;
   padding-top: 0.3em;
-}
-
-.vertical {
-  padding: 8px;
-  border-left: 2px solid grey;
+  padding-bottom: 0.3em;
 }
