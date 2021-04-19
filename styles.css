@@ -9,6 +9,10 @@
 
 /* ALLGEMEIN */
 
+section {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Archivo", sans-serif;
@@ -27,6 +31,7 @@ h2 {
 
 .headline-2 {
   font-size: 2em;
+  text-align: center;
 }
 
 /* GRID */
@@ -51,7 +56,7 @@ h2 {
 .navbar-section {
   display: grid;
   background: #28777b;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10em, auto));
 }
 
 .logo-name {
@@ -71,6 +76,10 @@ h2 {
   font-size: 1.3em;
 }
 
+a {
+  position: relative;
+}
+
 a:hover {
   color: #fff;
 }
@@ -78,6 +87,19 @@ a:hover {
 .links-nav {
   text-align: right;
   list-style-type: none;
+}
+
+.links-nav a:hover {
+  color: #fff;
+}
+
+.links-nav a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 1px solid #fff;
 }
 
 .links-nav li {
@@ -98,7 +120,7 @@ a:hover {
 .banner {
   display: grid;
   background: #f7faff;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .banner img {
@@ -144,6 +166,10 @@ a:hover {
   background: #fff;
 }
 
+#uebermich {
+  text-align: center;
+}
+
 /* FOOTER */
 .footer-section {
   display: grid;
@@ -161,4 +187,5 @@ a:hover {
   background: #28777b;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  width: 100%;
 }
