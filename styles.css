@@ -34,8 +34,8 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25em, auto));
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 2fr;
   justify-items: center;
   margin: 4em;
 }
@@ -51,8 +51,9 @@ h2 {
 
 .navbar-section {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   background: #28777b;
-  grid-template-columns: repeat(auto-fit, minmax(10em, auto));
 }
 
 .logo-name {
@@ -134,7 +135,7 @@ a:hover {
 
 /* Main */
 
-.card-white {
+.card {
   background: #fff;
   margin: 1em;
   padding: 1em;
@@ -144,11 +145,11 @@ a:hover {
   border-radius: 10px;
 }
 
-.card-white:hover {
+.card:hover {
   background: #28777b;
 }
 
-.card-grey {
+.card-2 {
   background: #28777b;
   margin: 1em;
   padding: 1em;
@@ -158,12 +159,13 @@ a:hover {
   border-radius: 10px;
 }
 
-.card-grey:hover {
+.card-2:hover {
   background: #fff;
 }
 
 #uebermich {
   text-align: center;
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 /* FOOTER */
