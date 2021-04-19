@@ -134,7 +134,7 @@ a:hover {
 
 /* Main */
 
-.card-white {
+.card {
   background: #fff;
   margin: 1em;
   padding: 1em;
@@ -144,11 +144,11 @@ a:hover {
   border-radius: 10px;
 }
 
-.card-white:hover {
+.card:hover {
   background: #28777b;
 }
 
-.card-grey {
+.card-2 {
   background: #28777b;
   margin: 1em;
   padding: 1em;
@@ -158,7 +158,7 @@ a:hover {
   border-radius: 10px;
 }
 
-.card-grey:hover {
+.card-2:hover {
   background: #fff;
 }
 
