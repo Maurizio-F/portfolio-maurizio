@@ -1,0 +1,161 @@
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.headline-2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 10%;
+}
+
+/* HEADER */
+
+.header-section {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.banner {
+  max-height: 30em;
+}
+
+/* NAVBAR */
+
+.navbar-section {
+  display: flex;
+  background: #28777b;
+}
+
+.logo-name {
+  text-align: left;
+  list-style-type: none;
+  font-family: "Courgette", cursive;
+}
+
+.logo-name li {
+  display: inline-block;
+  padding: 0.8em;
+}
+
+.logo-name a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.links-nav {
+  text-align: right;
+  list-style-type: none;
+}
+
+.links-nav a:hover {
+  color: #fff;
+}
+
+.links-nav a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 1px solid #fff;
+}
+
+.links-nav li {
+  display: inline-block;
+  padding: 0.8em;
+  padding-right: 2em;
+}
+
+.links-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin-top: 3px;
+}
+
+/* BANNER */
+
+.banner img {
+  height: 30em;
+  border-bottom-right-radius: 40px;
+}
+
+.banner img:hover {
+  filter: grayscale(80%);
+  opacity: 0.9;
+  transition-delay: 400ms;
+  transition-duration: 400ms;
+}
+
+/* Main */
+
+.container {
+  display: flex;
+}
+
+.card {
+  background: #fff;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background: #28777b;
+}
+
+.card-2 {
+  background: #28777b;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-2:hover {
+  background: #fff;
+}
+
+#uebermich {
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+/* FOOTER */
+.footer-section {
+  background: #28777b;
+}
+
+.kontakt {
+  list-style-type: none;
+}
+
+/* SONSTIGES */
+
+.petrol {
+  background: #28777b;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  width: 100%;
+}
