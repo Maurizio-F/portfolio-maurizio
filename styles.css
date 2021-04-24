@@ -16,3 +16,42 @@ body {
   color: #2b2c28;
   font-size: 1em;
 }
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+/* NAVBAR */
+
+.navbar-section {
+  display: flex;
+  justify-content: space-between;
+  background: #28777b;
+}
+
+.navbar-section li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  color: aliceblue;
+}
+
+/* BANNER */
+
+.banner {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.banner img {
+  height: 30em;
+  border-bottom-right-radius: 40px;
+}
+
+.banner h1,
+h2 {
+  flex-wrap: wrap;
+}
