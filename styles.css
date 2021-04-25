@@ -32,6 +32,19 @@ body {
   grid-template-rows: auto;
 }
 
+a:hover {
+  color: black;
+  text-decoration: overline;
+}
+
+/* COLORS */
+
+:root {
+  --primary-bg-color: #28777b;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+}
+
 /* NAVBAR */
 
 .navbar-section {
@@ -59,4 +72,66 @@ a {
 .banner img {
   height: 30em;
   border-bottom-right-radius: 40px;
+}
+
+.banner img:hover {
+  filter: grayscale(80%);
+  opacity: 0.9;
+  transition-delay: 400ms;
+  transition-duration: 400ms;
+}
+
+/* SECTIONS */
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3em 0 3em 0;
+}
+
+.card-type-a {
+  text-align: center;
+  justify-self: center;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.card-type-a:hover {
+  background: var(--primary-bg-color);
+}
+
+.card-type-b {
+  text-align: center;
+  justify-self: center;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.card-type-b:hover {
+  background: white;
+}
+
+.uebermich {
+  padding-top: 2em;
+}
+
+.skills {
+  background: var(--primary-bg-color);
+  padding-top: 2em;
+}
+
+.hobbys {
+  padding-top: 2em;
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--primary-bg-color);
+  padding: 1em 0 1em 0;
+  width: 100vw;
+}
+
+.footer li {
+  list-style-type: none;
 }
