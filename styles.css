@@ -7,6 +7,16 @@
 /*FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Courgette&display=swap");
 
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
 /* ALLGEMEIN */
 
 body {
@@ -42,16 +52,11 @@ a {
 /* BANNER */
 
 .banner {
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .banner img {
   height: 30em;
   border-bottom-right-radius: 40px;
-}
-
-.banner h1,
-h2 {
-  flex-wrap: wrap;
 }
